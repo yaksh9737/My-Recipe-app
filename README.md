@@ -1,103 +1,71 @@
-Recipe Management Full-Stack Application
-This application allows users to create, view, edit, and delete recipes. It provides user authentication via JWT, where users can log in, create their own recipes, and manage them through an intuitive interface.
+# Recipe Management Full-Stack Application
 
-Live Demo
-Frontend: Recipe Management Frontend
-Backend: Recipe Management Backend
-Table of Contents
-Features
-Tech Stack
-Installation
-Frontend
-Backend
-API Endpoints
-Environment Variables
-Deployment
-Testing
-License
-Features
-User Authentication: Register and log in using JWT-based authentication.
-Recipe Management: Create, view, edit, and delete recipes.
-Search Recipes: Filter recipes based on ingredients or cuisine type.
-Responsive Design: User-friendly interface using Tailwind CSS for a modern look.
-Integration: Seamless communication between frontend and backend using Axios.
-Tech Stack
-Frontend:
+A comprehensive recipe management platform where users can seamlessly create, view, edit, and delete their recipes. This app is secured with JWT-based authentication, allowing personalized user experiences. Users can log in, manage their own recipes, and interact with a modern, responsive interface.
 
-React.js
-Tailwind CSS
-Axios
-Backend:
+### 🚀 Live Demo
+- **Frontend**: [Recipe Management Frontend](#)  
+- **Backend**: [Recipe Management Backend](#)
 
-Node.js
-Express.js
-MongoDB
-Mongoose
-JWT (JSON Web Token) for authentication
-Multer for image uploads
-Deployment:
+---
 
-Frontend: Vercel
-Backend: Render
-Installation
+## 📋 Table of Contents
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Installation](#installation)
+- [API Endpoints](#api-endpoints)
+- [Environment Variables](#environment-variables)
+- [Deployment](#deployment)
+- [Testing](#testing)
+- [License](#license)
+
+---
+
+## ✨ Features
+- **User Authentication**: Secure registration and login with JWT.
+- **Recipe Management**: CRUD functionality for recipes (create, view, edit, delete).
+- **Search Functionality**: Filter recipes by ingredients or cuisine type.
+- **Responsive Design**: Optimized for both desktop and mobile using Tailwind CSS.
+- **Seamless Integration**: Efficient communication between frontend and backend with Axios.
+
+---
+
+## 💻 Tech Stack
+
+### **Frontend**
+- React.js
+- Tailwind CSS
+- Axios
+
+### **Backend**
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT (JSON Web Token) for authentication
+- Multer for image uploads
+
+---
+
+## 🚀 Deployment
+- **Frontend**: Vercel
+- **Backend**: Render
+
+---
+
+## ⚙️ Installation
+
 To set up the project locally, follow these steps:
 
-Prerequisites
-Node.js (v14 or above)
-MongoDB (local or cloud instance)
-NPM or Yarn
-2. Install dependencies
-For both frontend and backend, you will need to install the dependencies. Run the following commands:
+### 1. Prerequisites
+- Node.js (v14 or above)
+- MongoDB (local or cloud instance)
+- NPM or Yarn
 
-Frontend
-bash
-Copy code
+### 2. Install dependencies
+
+Run the following commands for both frontend and backend:
+
+#### Frontend
+```bash
 cd frontend
 npm install
-Backend
-bash
-Copy code
-cd backend
-npm install
-3. Set up environment variables
-Frontend
-Create a .env file in the frontend directory and add the following:
-
-bash
-Copy code
-REACT_APP_API_URL=https://swifrut-task-6.onrender.com/api
-Backend
-Create a .env file in the backend directory and add the following:
-
-bash
-Copy code
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-PORT=8182
-4. Running the Application
-Frontend
-To run the React frontend:
-
-bash
-Copy code
-cd frontend
-npm start
-The application will run on http://localhost:3000.
-
-Backend
-To run the Express backend:
-
-bash
-Copy code
-cd backend
-npm start
-The backend will run on http://localhost:8182.
-Deployment
-Frontend
-The frontend is deployed on Vercel at https://swifrut-task-6.vercel.app/.
-
-Backend
-The backend is deployed on Render at https://swifrut-task-6.onrender.com.
-
-Local Deployment
-To run the project locally, ensure both frontend and backend are running, and that the .env files are correctly configured with your MongoDB and JWT secrets.
