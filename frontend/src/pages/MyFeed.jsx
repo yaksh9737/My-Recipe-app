@@ -15,7 +15,7 @@ const MyFeed = () => {
     const fetchMyRecipes = async () => {
       try {
         const response = await axios.get(
-          `${BASE_URL}/api/recipes/myrecipes`, // Ensure this endpoint returns user's recipes
+          `http://localhost:7890/api/api/recipes/myrecipes`, // Ensure this endpoint returns user's recipes
           {
             headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
           }
