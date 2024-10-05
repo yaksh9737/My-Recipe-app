@@ -12,6 +12,8 @@ A comprehensive recipe management platform where users can seamlessly create, vi
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
 - [API Endpoints](#api-endpoints)
 - [Environment Variables](#environment-variables)
 - [Deployment](#deployment)
@@ -21,51 +23,26 @@ A comprehensive recipe management platform where users can seamlessly create, vi
 ---
 
 ## ✨ Features
-- **User Authentication**: Secure registration and login with JWT.
-- **Recipe Management**: CRUD functionality for recipes (create, view, edit, delete).
-- **Search Functionality**: Filter recipes by ingredients or cuisine type.
-- **Responsive Design**: Optimized for both desktop and mobile using Tailwind CSS.
-- **Seamless Integration**: Efficient communication between frontend and backend with Axios.
+- **User Authentication**: Secure JWT-based registration and login system.
+- **Recipe Management**: Create, view, update, and delete personal recipes.
+- **Search Functionality**: Search recipes by ingredients, cuisine, or recipe names.
+- **Responsive Design**: Optimized for mobile and desktop views using Tailwind CSS.
+- **Frontend-Backend Integration**: Seamless communication via Axios for API calls.
 
 ---
 
-## 💻 Tech Stack
+## 🛠️ Tech Stack
 
-### **Frontend**
+**Frontend:**
 - React.js
 - Tailwind CSS
 - Axios
 
-### **Backend**
+**Backend:**
 - Node.js
 - Express.js
-- MongoDB
-- Mongoose
-- JWT (JSON Web Token) for authentication
+- MongoDB (with Mongoose)
+- JWT for authentication
 - Multer for image uploads
 
 ---
-
-## 🚀 Deployment
-- **Frontend**: Vercel
-- **Backend**: Render
-
----
-
-## ⚙️ Installation
-
-To set up the project locally, follow these steps:
-
-### 1. Prerequisites
-- Node.js (v14 or above)
-- MongoDB (local or cloud instance)
-- NPM or Yarn
-
-### 2. Install dependencies
-
-Run the following commands for both frontend and backend:
-
-#### Frontend
-```bash
-cd frontend
-npm install
