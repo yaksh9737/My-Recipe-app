@@ -10,6 +10,12 @@ const app = express();
 
 const PORT = Config.PORT || 7890;
 
+// Root route
+app.get('/', (req, res) => {
+  res.send('Welcome to the My Recipe App API');
+});
+
+
 // Middleware to parse incoming JSON
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
